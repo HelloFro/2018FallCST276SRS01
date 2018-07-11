@@ -8,7 +8,7 @@ namespace WeatherStation
     public:
         using value_type = int; // percent [0, 100]
 
-        static auto constexpr default_value{ -1 };
+        static value_type constexpr default_value{ -1 };
 
     private:
         value_type const value_{ default_value };
