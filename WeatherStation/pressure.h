@@ -10,7 +10,7 @@ namespace WeatherStation
     public:
         using value_type = double; // inches Hg (29.9213 in Hg == 1 atmosphere)
 
-        static auto constexpr default_value{ std::numeric_limits<value_type>::quiet_NaN() };
+        static value_type constexpr default_value{ std::numeric_limits<value_type>::quiet_NaN() };
 
     private:
         value_type value_{ default_value };
