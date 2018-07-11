@@ -14,7 +14,7 @@ namespace WeatherViewer
         auto const pressure{ station.getPressure() };
 
         os <<
-            std::setw(3) << temperature.get() << "degree C, " <<
+            std::setw(3) << temperature.get() << " degree C, " <<
             std::setw(3) << humidity.get()    << "%, "  <<
             std::setw(4) << pressure.get()    << " in. Hg";
 
